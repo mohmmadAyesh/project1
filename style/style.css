@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Lato&family=Montserrat:wght@100;400&family=Noto+Sans:ital,wght@1,300;1,400;1,500&family=Open+Sans:wght@300&family=Oswald:wght@200&family=Poiret+One&family=Poppins:wght@300&family=Raleway:wght@300&family=Readex+Pro&family=Roboto:ital,wght@1,300&family=Smooch&family=Tajawal:wght@300&family=Ubuntu:wght@500&display=swap');
+:root{
+--lightBlack:#2D2D2D;
+--white:#ffffff;
+--blurBlue:#7996FC;
+
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background:var(--lightBlack);
+    /* padding:20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+nav{
+    width:100%;
+    height:29px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav ul{
+    width:451px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color:#C9C9C9;
+    font-family: 'Jost',sans-serif;
+    font-size: 20px;
+}
+nav ul li a.active{
+    color:var(--white);
+}
+header{
+    display: flex;
+    width:85%;
+    height:724px;
+    align-items: center;
+    margin:0 20px;
+    justify-content: space-between;
+}
+.img-container{
+    width:50%;
+    max-width: 649px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+
+
+}
+.img-container .man{
+    width:55.7%;
+    height:93%;
+}
+.img-container::before{
+    position: absolute;
+    top:50%;
+    left:50%;
+    content: '';
+    width:440px;
+    height:400px;
+    background: var(--white);
+    z-index: -1;
+    border-radius: 40px;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+.img-container::after{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    content:'';
+    width:85%;
+    height:85%;
+    z-index: -2;
+    border-radius: 100%;
+    filter: blur(50px);
+    background: var(--blurBlue);
+}
+.img-container .ps{
+    width:60px;
+    height:60px;
+    position: absolute;
+    left:-10px;
+    top:30%;
+}
+.img-container .lights,.shadowLights{
+    width:80px;
+    height:60px;
+    position: absolute;
+    top:-5px;
+    right:20%;
+}
+.text-container{
+    width:50%;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+}
+.text-container p{
+    color:var(--white);
+    font-family: 'Jost',sans-serif;
+    font-size: 56px;
+}
+.text-container .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.text-container .buttons .hire,.port{
+    width:251px;
+    height:60px;
+    background: #7996FC;
+    padding:10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color:#fff;
+    font-family: 'Jostu',sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+}
+.text-container .buttons .port{
+    background:#414141;
+}
+.text-container .buttons .hire span,
+.text-container .buttons .port span,
+.text-container .touch .content span{
+    font-size: 24px;
+}
+.text-container .touch img{
+    width:29px;
+    height:29px;
+    margin-right: 10px;
+}
+.text-container .touch{
+    width:510px;
+    height:60px;
+    background: #414141;
+    margin-top: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px 20px;
+    color: #fff;
+    font-family: 'Jost',sans-serif;
+    text-decoration: none;
+}
+.text-container .touch .content{
+    padding:5px 5px;
+    display: flex;
+    justify-content:flex-start;
+    width:80%;
+}
+.first{
+    width:82.8%;
+    color:#fff;
+    font-family: 'Jost',sans-serif;
+    margin-bottom: 50px;
+}
+.first .header{
+    font-size: 36px;
+    color:#C9C9C9;
+    font-weight: 100;
+}
+.first .content{
+    font-size: 48px;
+    color:#fff;
+    font-style: italic;
+    text-align: justify;
+}
+.second{
+    margin-top:10px;
+    width:82.9%;
+    /* padding:50px; */
+}
+.second .images{
+    padding:10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.second h2{
+    font-family: 'Jost',sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    color:#fff;
+    margin-bottom: 10px;
+}
+.second .images a{
+    margin-right:10px;
+    width:30%;
+    text-decoration: none;
+}
+.second .images a img{
+    width:100%;
+    height:77%;
+    border-radius: 30px;
+}
+.second .images a p{
+    width:100%;
+    font-weight: 600;
+    font-size: 36px;
+    color:#fff;
+    text-align: center;
+    font-family: 'Jost',sans-serif;
+}
+.second .footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+}
+.second .footer .see{
+    width:30%;
+    text-decoration: none;
+    color:#c9c9c9;
+    font-size: 32px;
+    font-family: 'Jost',sans-serif;
+    text-align: center;
+}
+.second .footer .buttons{
+    width:69%;
+    display: flex;
+    justify-content: space-between;
+}
+.second .footer .drible,.behance,.FigmaFiles{
+    width:30%;
+    text-decoration: none;
+    height:60px;
+    background: #414141;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px 20px;
+    color:#fff;
+    font-family: 'Jost',sans-serif;
+    font-size: 24px;
+    margin-right: 10px;
+}
+.second .footer .behance{
+    background: #7996FC;
+}
+.second .footer .FigmaFiles{
+    /* padding:0 10px; */
+    width:30%;
+}
+.third{
+    width:83.33%;
+    /* padding:0 50px; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.third h2{
+    font-size: 48px;
+    color:#fff;
+    font-weight: bold;
+    font-family: 'Jost',sans-serif;
+    margin-bottom: 30px;
+}
+.third .container{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.third .container div{
+    width:30%;
+    background: #414141;
+    border-radius: 20px;
+    padding:10px 20px;
+}
+.third .container .call .title{
+    font-size: 16px;
+    color:#fff;
+    font-family: 'Jost';
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+.third .container .call .name{
+    font-size: 24px;
+    color:#fff;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-family: 'Jost',sans-serif;
+}
+.third .container .call .foot{
+    padding:10px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width:100%;
+}
+.third .container .call .foot p{
+    color:#fff;
+    font-family: 'Jost',sans-serif;
+    padding:0 10px;
+    font-size: 24px;
+}
+.third .container .call .foot a{
+    padding:15px;
+    background: #7996FC;
+    border-radius: 10px;
+}
+.third .container .last{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height:180px;
+}
+.third .container .last .cross{
+    position: relative;
+}
+.third .container .last .cross svg{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    margin-bottom: 20px;
+}
+.third .container .last p{
+    font-size: 24px;
+    color:#C9C9C9;
+    font-family: 'Jost',sans-serif;
+    padding:20px;
+}
+.containerF{
+    width:100%;
+    margin: 0;
+}
+.fourth{
+    width:100%;
+    height:310px;
+    background: #414141;
+    border-top-right-radius:30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:60px;
+}
+.fourth .content{
+    width:14%;
+    height:100%;
+}
+.fourth .content p:first-child{
+    font-size: 24px;
+    color:#fff;
+    font-weight: 100;
+    font-family: 'Jost',sans-serif;
+    margin-bottom:20px;
+}
+.fourth .content p:nth-child(2){
+    font-size: 24px;
+    color:#fff;
+    font-weight: 400;
+    font-family: 'Jost',sans-serif;
+    margin-bottom: 10px;
+}
+.fourth .content p.samer{
+    font-size: 24px;
+    color:#fff;
+    font-weight: 400;
+    font-family: 'Jost',sans-serif;
+}
+.content2{
+    width:27%;
+    height:100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content2 .list1 p,
+.content2 .list2 p{
+    color:#fff;
+    font-size: 24px;
+    font-family: 'Jost',sans-serif;
+    margin-bottom: 10px;
+}
+.content2 .list ul li
+{
+    list-style: none;
+    margin: 10px;
+}
+
+.content2  .list ul li a{
+    font-size: 18px;
+    color:#fff;
+    font-family: 'Jost',sans-serif;
+    text-decoration: none;
+    padding:10px;
+    font-weight: 200;
+
+}
+
