@@ -347,7 +347,7 @@ header{
 }
 .fourth{
     width:100%;
-    height:310px;
+    /* height:310px; */
     background: #414141;
     border-top-right-radius:30px;
     display: flex;
@@ -406,6 +406,83 @@ header{
     text-decoration: none;
     padding:10px;
     font-weight: 200;
+
+}
+@media(max-width:990px){
+    header{
+        flex-direction: column;
+    }
+    header .img-container{
+        width:100%;
+    }
+    header .text-container{
+        width:100%;
+    }
+    .first{
+        display: flex;
+        flex-direction: column;
+        margin-top: 300px;
+    }
+    .second h2{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .second .images{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .second .images a{
+        width:50%;
+    }
+    .second .footer .buttons{
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+    .second .footer{
+        flex-direction: column;
+    }
+    .second .footer .see{
+        width:100%;
+        margin-bottom: 50px;
+    }
+    .second .footer .drible,.behance,.FigmaFiles{
+        width:100%;
+        margin: 10px;
+    }
+    .second .footer .FigmaFiles{
+        /* padding:0 10px; */
+        width:100%;
+    }
+    .third h2{
+        text-align: center;
+    }
+    .third .container{
+        flex-wrap: wrap;
+
+    }
+    .third .container .call{
+        width:40%;
+        margin: 20px;
+    }
+    .third .container .last{
+        margin: 20px;
+        width:85%;
+        margin: 10%;
+    }
+    .fourth .content{
+        width:30%;
+    }
+    .fourth .content2{
+        width:40%;
+    }
+    .content2 ul li{
+        margin: 0;
+    }
+    .content2  .list ul li a{
+        padding:10px 0;
+        margin: -10%;
+    }
 
 }
 
